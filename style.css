@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+    font-family: 'CanterBold';
+    src:url('fonts/CanterBold.ttf.woff') format('woff'),
+        url('fonts/CanterBold.ttf.svg#CanterBold') format('svg'),
+        url('fonts/CanterBold.ttf.eot'),
+        url('fonts/CanterBold.ttf.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+  width: 100%;
+  background-image: url('bg.png');
+}
+
+header {
+  width: 73%;
+  height: 1080px;
+  margin: 9.5% auto 0;
+  background-image: url('Content Background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content:flex-end;
+}
+
+.header {
+  margin: 25% 0;
+  padding-right: 3.4%;
+  font-family: 'CanterBold', sans-serif;
+  font-size: 80px;
+  font-weight: 600;
+  color: white;
+  text-transform: uppercase;
+  text-shadow: 0 2px 1px #4e645f;
+}
+
+#GetReady {
+  font-size: 1.7em;
+}
+
+.time {
+  font-size: 60px;
+  font-weight: 500;
+  display: flex;
+  justify-content: space-evenly;
+  text-shadow: none;
+  margin: 20% 0;
+}
+
+.day, .hour, .min {
+  text-align: center;
+}
+
+.day-counter, .hour-counter, .min-counter {
+  width: 120px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+span {
+  width: 20px;
+  background-image: url("digit bg.png");
+  background-repeat: no-repeat;
+  padding: 10px;
+}
+
+main {
+  width: 73%;
+  margin: 0 auto;
+  padding-bottom: 70px;
+  background-color: #f6f2e6;
+  text-align: center;
+}
+
+.main-title {
+  font-family: 'CanterBold', sans-serif;
+  font-size: 80px;
+  font-weight: 600;
+  color: #515253;
+  text-transform: uppercase;
+  padding: 70px 0;
+}
+
+main section {
+  display: flex;
+  justify-content: space-around;
+  text-align: left;
+}
+
+input {
+  background-color: transparent;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.form {
+  display: flex;
+  margin: 50px 0;
+}
+
+.name {
+  margin-right: 50px;
+}
+
+.message {
+  width: 100%;
+}
+
+.form-send {
+  display: flex;
+}
+
+.submit {
+  margin: 20px auto 0;;
+}
+
+.adress {
+  padding-top: 50px;
+  display: flex;
+}
+
+.adress-icon {
+  margin: 0 auto;
+  margin-right: 0;
+}
+
+.text-adress {
+  margin: auto;
+  margin-left: 2px;
+  font-family: "Georgia", serif;
+  font-style: italic;
+  font-size: 16px;
+  color: #32363a;
+}
+
+footer {
+  width: 73%;
+  margin: 0 auto 9.5%;
+  padding-bottom: 30px;
+  background-color: #f6f2e6;
+  text-align: center;
+}
+
+footer a {
+  margin: 0 auto;
+  margin-right: 40px;
+}
