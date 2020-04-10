@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  transition: .5s ease-in-out;
 }
 
 @font-face {
@@ -15,14 +16,13 @@
 
 body {
   width: 100%;
-  background-image: url('bg.png');
+  background-image: url('bg-images/bg.png');
 }
 
 header {
-  width: 73%;
-  height: 1080px;
+  width: 75%;
   margin: 9.5% auto 0;
-  background-image: url('Content Background.png');
+  background-image: url('bg-images/Content Background.png');
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -31,7 +31,7 @@ header {
 
 .header {
   margin: 25% 0;
-  padding-right: 3.4%;
+  padding-right: 5%;
   font-family: 'CanterBold', sans-serif;
   font-size: 80px;
   font-weight: 600;
@@ -42,6 +42,7 @@ header {
 
 #GetReady {
   font-size: 1.7em;
+  line-height: 110px;
 }
 
 .time {
@@ -54,7 +55,9 @@ header {
 }
 
 .day, .hour, .min {
+  margin-top: 5%;
   text-align: center;
+  text-shadow: 0 2px 1px #4e645f;
 }
 
 .day-counter, .hour-counter, .min-counter {
@@ -65,13 +68,13 @@ header {
 
 span {
   width: 20px;
-  background-image: url("digit bg.png");
+  background-image: url("bg-images/digit bg.png");
   background-repeat: no-repeat;
   padding: 10px;
 }
 
 main {
-  width: 73%;
+  width: 75%;
   margin: 0 auto;
   padding-bottom: 70px;
   background-color: #f6f2e6;
@@ -93,6 +96,10 @@ main section {
   text-align: left;
 }
 
+main section img {
+  width: 40%;
+}
+
 input {
   background-color: transparent;
   border: 1px solid black;
@@ -102,15 +109,20 @@ input {
 
 .form {
   display: flex;
-  margin: 50px 0;
+  justify-content: space-between;
+  margin: 15% 0;
 }
 
-.name {
-  margin-right: 50px;
+.name, .email {
+  width: 33.333%;
+}
+
+.message-send {
+  text-align: center;
 }
 
 .message {
-  width: 100%;
+  width: 80%;
 }
 
 .form-send {
@@ -141,7 +153,7 @@ input {
 }
 
 footer {
-  width: 73%;
+  width: 75%;
   margin: 0 auto 9.5%;
   padding-bottom: 30px;
   background-color: #f6f2e6;
@@ -151,4 +163,37 @@ footer {
 footer a {
   margin: 0 auto;
   margin-right: 40px;
+}
+
+@media (max-width: 1340px) {
+  main section {
+    display: inline-block;
+  }
+
+  main section img {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .day, .hour, .min {
+    text-shadow: 2px 2px 4px #000;
+  }
+
+  header, main, footer {
+    width: 85%;
+  }
+
+  .header {
+    margin: 20% 0;
+  }
+}
+
+@media (max-width: 720px) {
+  header, main, footer {
+    width: 95%;
+  }
+
+  .header {
+    margin: 15% 0;
+  }
 }
