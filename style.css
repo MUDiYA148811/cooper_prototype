@@ -17,6 +17,8 @@
 body {
   width: 100%;
   background-image: url('bg-images/bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 header {
@@ -54,13 +56,13 @@ header {
   margin: 20% 0;
 }
 
-.day, .hour, .min {
+.hour, .minute, .second {
   margin-top: 5%;
   text-align: center;
   text-shadow: 0 2px 1px #4e645f;
 }
 
-.day-counter, .hour-counter, .min-counter {
+.hour-counter, .minute-counter, .second-counter {
   width: 120px;
   display: flex;
   justify-content: space-evenly;
@@ -98,6 +100,10 @@ main section {
 
 main section img {
   width: 40%;
+}
+
+.map-icon {
+  width: 100%;
 }
 
 input {
@@ -175,7 +181,7 @@ footer a {
     margin: 0 auto;
   }
 
-  .day, .hour, .min {
+  .hour, .minute, .second {
     text-shadow: 2px 2px 4px #000;
   }
 

@@ -15,26 +15,26 @@
           <p id="GetReady">Get Ready</p>
           <p>We Are Comming Soon</p>
         <div class="time">
-          <div class="day">
-            <div class="day-counter">
-              <span><p>1</p></span>
-              <span><p>2</p></span>
-            </div>
-            <p>Days</p>
-          </div>
           <div class="hour">
             <div class="hour-counter">
-              <span><p>0</p></span>
-              <span><p>8</p></span>
+              <span><p id="hours_first">1</p></span>
+              <span><p id="hours_second">0</p></span>
             </div>
             <p>Hours</p>
           </div>
-          <div class="min">
-            <div class="min-counter">
-              <span><p>5</p></span>
-              <span><p>2</p></span>
+          <div class="minute">
+            <div class="minute-counter">
+              <span><p id="minutes_first">0</p></span>
+              <span><p id="minutes_second">0</p></span>
             </div>
             <p>Min</p>
+          </div>
+          <div class="second">
+            <div class="second-counter">
+              <span><p id="seconds_first">0</p></span>
+              <span><p id="seconds_second">0</p></span>
+            </div>
+            <p>Sec</p>
           </div>
         </div>
       </div>
@@ -58,7 +58,7 @@
       </section>
       <section class="adress">
         <div class="adress-icon">
-          <img src="some-images/map-icon.png">
+          <img class="map-icon" src="some-images/map-icon.png">
         </div>
         <div class="text-adress">
           <p>185 Greenwich High Road</p>
@@ -73,5 +73,6 @@
       <a href=""><img src="some-images/skype-icon.png"></a>
       <a href=""><img src="some-images/p-icon.png"></a>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
